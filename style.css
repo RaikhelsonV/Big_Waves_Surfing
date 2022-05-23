@@ -1,0 +1,29 @@
+body{
+	background-color:rgb(238,255,204);
+	font-family:Arial;
+}
+h1{
+	text-align:center;
+}
+.red{
+	color:red;
+}
+.big_font{
+	font-size:32px;
+}
+#special_style{
+	border:2px solid green;
+	background-color: orange;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 20px;
+  width: 350px;
+}
+
+img:hover {
+  box-shadow: 0 0 5px 5px rgba(100, 140, 186, 0.9);
+}
+	
