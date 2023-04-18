@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: big-waves-surfing
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: big-waves-surfing
+  template:
+    metadata:
+      labels:
+        app: big-waves-surfing
+    spec:
+      containers:
+      - name: big-waves-surfing
+        image: raikhelson/big_waves_surfing:${DOCKER_IMAGE_TAG}
+        ports:
+        - containerPort: 80
