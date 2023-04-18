@@ -36,8 +36,9 @@ pipeline {
                 script {
                     withCredentials([kubeconfigFile(credentialsId: 'k8s-config', variable: 'KUBECONFIG')]) {
                         sh "kubectl apply -f kubernetes.yaml"
+                    }
+                }
             }
         }
-    }
     }
 }
